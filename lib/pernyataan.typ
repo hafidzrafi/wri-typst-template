@@ -67,21 +67,38 @@
   v(8pt)
   [Demikian surat pernyataan ini saya buat dengan penuh kesadaran dan tanggung jawab.]
 
-  v(22pt)
+  v(14pt)
+
+  // Tanggal Malang di kanan atas
   grid(
     columns: (1fr, 1fr),
     gutter: 20pt,
+    [],
+    [Malang, #tanggal-surat]
+  )
+  v(12pt) // Kosong 1 line
+
+  // Signature Block menggunakan grid multi-baris agar NAMA SEJAJAR PRESISI
+  grid(
+    columns: (1fr, 1fr),
+    gutter: 20pt,
+    align: (left, left),
+
+    // Baris 1: Jabatan
     [
       Menyetujui,\
-      #pembina.jabatan,\
-      #v(70pt)
-      #pembina.nama\
-      NIP. #pembina.nip
+      #pembina.jabatan,
     ],
     [
-      Malang, #tanggal-surat\
-      Ketua Pelaksana,\
-      #v(12pt)
+      Ketua Pelaksana,
+    ],
+
+    // Baris 2: Ruang tanda tangan & materai
+    [
+      #v(66pt)
+    ],
+    [
+      #v(6pt)
       #rect(
         width: 55pt,
         height: 44pt,
@@ -89,9 +106,23 @@
         align(center + horizon)[
           #text(size: 8.5pt, weight: "bold")[Materai\ 10000]
         ]
-      )\
-      #v(14pt)
-      #ketua-pelaksana.nama\
+      )
+      #v(6pt)
+    ],
+
+    // Baris 3: Nama (SEJAJAR)
+    [
+      #pembina.nama
+    ],
+    [
+      #ketua-pelaksana.nama
+    ],
+
+    // Baris 4: NIP & NIM (SEJAJAR)
+    [
+      NIP. #pembina.nip
+    ],
+    [
       NIM. #ketua-pelaksana.nim
     ]
   )

@@ -21,7 +21,7 @@
   if tampilkan-petinggi {
     grid(
       columns: (115pt, 12pt, 1fr, auto),
-      row-gutter: 9.0pt,
+      row-gutter: 12.0pt,
       [Pelindung], [:], [#pelindung], [],
       [Penasehat], [:], [
         #for (i, p) in penasehat.enumerate() {
