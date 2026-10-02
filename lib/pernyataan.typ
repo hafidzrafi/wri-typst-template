@@ -37,7 +37,7 @@
 
   grid(
     columns: (52pt, 10pt, 1fr),
-    row-gutter: 7.0pt,
+    row-gutter: 10.0pt,
     [Nama], [:], [#ketua-pelaksana.nama],
     [NIM], [:], [#ketua-pelaksana.nim],
     [Prodi], [:], [#ketua-pelaksana.prodi],
@@ -75,7 +75,7 @@
     tanggal: tanggal-surat,
     pembina: pembina,
     ketua-pelaksana: ketua-pelaksana,
-    space: 52pt,
+    space: 72pt,
     gutter: 20pt,
   )
 }

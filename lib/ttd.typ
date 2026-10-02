@@ -56,35 +56,45 @@
     nama: "",
     nim: "",
   ),
-  space: 52pt,
+  space: 72pt,
   gutter: 20pt,
 ) = {
   grid(
     columns: (1fr, 1fr),
-    gutter: gutter,
+    column-gutter: gutter,
+    row-gutter: 0pt,
     align: left,
 
-    // Baris 1: Tanggal Malang di kolom kanan
-    [], [Malang, #tanggal],
-
-    // Baris 2: Menyetujui di kolom kiri, kolom kanan kosong (1 line di bawah tanggal)
-    [Menyetujui,], [],
-
-    // Baris 3: Jabatan sejajar (Dosen Pembina Kemahasiswaan & Ketua Pelaksana)
-    [#pembina.jabatan,], [Ketua Pelaksana,],
-
-    // Baris 4: Ruang TTD basah (kiri) & Kotak Materai 10000 (kanan)
-    [#v(space)],
+    // Row 1: Header Jabatan & Tanggal
     [
-      #v(4pt)
-      #render-box-materai()
-      #v(4pt)
+      #hide[Malang, #tanggal]\
+      Menyetujui,\
+      #pembina.jabatan,
+    ],
+    [
+      Malang, #tanggal\
+      #hide[Menyetujui,]\
+      Ketua Pelaksana,
     ],
 
-    // Baris 5: Nama Penandatangan (Sejajar presisi)
-    [#pembina.nama], [#ketua-pelaksana.nama],
+    // Row 2: Ruang TTD basah (kiri) & Materai 10000 (kanan)
+    [
+      #v(space)
+    ],
+    [
+      #v((space - 44pt) / 2)
+      #render-box-materai()
+      #v((space - 44pt) / 2)
+    ],
 
-    // Baris 6: NIP & NIM (Sejajar presisi)
-    [NIP. #pembina.nip], [NIM. #ketua-pelaksana.nim],
+    // Row 3: Nama & NIP/NIM
+    [
+      #pembina.nama\
+      NIP. #pembina.nip
+    ],
+    [
+      #ketua-pelaksana.nama\
+      NIM. #ketua-pelaksana.nim
+    ],
   )
 }

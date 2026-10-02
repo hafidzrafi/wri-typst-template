@@ -66,7 +66,7 @@
   // Rincian butir 1 s.d. 7 (Colons aligned at 156pt / pos 3119)
   grid(
     columns: (14pt, 134pt, 8pt, 1fr),
-    row-gutter: 10.5pt,
+    row-gutter: 10pt,
     [1.], [Kegiatan], [:], [#nama-kegiatan],
     [2.], [Ketua Pelaksana], [], [],
     [], [a. Nama], [:], [#ketua-pelaksana.nama],

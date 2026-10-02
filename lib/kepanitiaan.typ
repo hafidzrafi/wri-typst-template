@@ -70,7 +70,7 @@
         #pad(left: 25pt)[
           #grid(
             columns: (78pt, 12pt, 1fr, auto),
-            row-gutter: 9.0pt,
+            row-gutter: 12.0pt,
             ..rows
           )
         ]
