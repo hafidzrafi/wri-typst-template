@@ -35,7 +35,7 @@
 
   set par(
     leading: 0.75em,
-    spacing: 1.0em,
+    spacing: 12pt,
     justify: true,
     first-line-indent: 0pt
   )
@@ -47,6 +47,8 @@
   show enum: set par(first-line-indent: 0pt, leading: 0.75em, justify: true)
   show list: set par(first-line-indent: 0pt, leading: 0.75em, justify: true)
   show rect: set par(first-line-indent: 0pt, justify: false)
+  set enum(spacing: 12pt)
+  set list(spacing: 12pt)
 
   // Heading Level 1 (Grey Banner #BFBFBF)
   show heading.where(level: 1): it => {

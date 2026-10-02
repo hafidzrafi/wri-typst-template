@@ -22,21 +22,20 @@
     jabatan: "Dosen Pembina Kemahasiswaan"
   )
 ) = {
-  set page(margin: (top: 2.0cm, bottom: 1.5cm, left: 4.0cm, right: 2.5cm))
-  set par(leading: 0.75em, spacing: 5.0pt, justify: true, first-line-indent: 0pt)
+  set page(margin: (top: 1.8cm, bottom: 1.2cm, left: 4.0cm, right: 2.5cm))
+  set par(leading: 0.75em, spacing: 10pt, justify: true, first-line-indent: 0pt)
 
-  v(6pt)
   align(center)[
     #underline[#text(weight: "bold", size: 12pt)[SURAT PERNYATAAN]]
   ]
-  v(7pt)
+  v(8pt)
 
   [Saya yang bertanda tangan dibawah ini.]
-  v(7pt)
+  v(8pt)
 
   grid(
     columns: (52pt, 10pt, 1fr),
-    row-gutter: 6.0pt,
+    row-gutter: 7.0pt,
     [Nama], [:], [#ketua-pelaksana.nama],
     [NIM], [:], [#ketua-pelaksana.nim],
     [Prodi], [:], [#ketua-pelaksana.prodi],
@@ -45,17 +44,18 @@
     [Telp/Hp], [:], [#ketua-pelaksana.telp],
   )
 
-  v(7pt)
+  v(8pt)
   [adalah ketua pelaksana kegiatan #nama-kegiatan, pada Workshop dan Riset Informatika Politeknik Negeri Malang.]
 
-  v(7pt)
+  v(8pt)
   [Pada #tanggal-pelaksanaan-teks diselenggarakan kegiatan #nama-kegiatan di Politeknik Negeri Malang. Unsur kepanitiaan kegiatan adalah mahasiswa aktif yang menjadi anggota fungsionaris Workshop dan Riset Informatika periode #periode-wri.]
 
-  v(7pt)
+  v(8pt)
   [Untuk itu saya menyatakan dengan sebenarnya bahwa:]
   v(6pt)
 
-  set enum(indent: 0pt, body-indent: 14pt, spacing: 5.0pt)
+  show enum: set par(leading: 12pt, justify: true)
+  set enum(indent: 0pt, body-indent: 14pt, spacing: 12pt)
   [
     + Kegiatan ini dilaksanakan secara Luring (#emph[Offline]) dengan menerapkan protokol kesehatan yang ketat sesuai dengan arahan dari kampus dan pemerintah.
     + Dalam pelaksanaan kegiatan tersebut, panitia pelaksana tidak akan bertindak untuk mencederai fisik atau mental peserta kegiatan.
@@ -64,33 +64,33 @@
     + Kegiatan ini dilaksanakan pada pukul #jam-pelaksanaan WIB.
   ]
 
-  v(7pt)
+  v(8pt)
   [Demikian surat pernyataan ini saya buat dengan penuh kesadaran dan tanggung jawab.]
 
-  v(14pt)
+  v(22pt)
   grid(
     columns: (1fr, 1fr),
     gutter: 20pt,
     [
       Menyetujui,\
-      #pembina.jabatan,
-      #v(58pt)
+      #pembina.jabatan,\
+      #v(70pt)
       #pembina.nama\
       NIP. #pembina.nip
     ],
     [
       Malang, #tanggal-surat\
-      Ketua Pelaksana,
-      #v(6pt)
+      Ketua Pelaksana,\
+      #v(12pt)
       #rect(
-        width: 55.8pt,
-        height: 44.0pt,
+        width: 55pt,
+        height: 44pt,
         stroke: 0.75pt,
         align(center + horizon)[
           #text(size: 8.5pt, weight: "bold")[Materai\ 10000]
         ]
-      )
-      #v(6pt)
+      )\
+      #v(14pt)
       #ketua-pelaksana.nama\
       NIM. #ketua-pelaksana.nim
     ]

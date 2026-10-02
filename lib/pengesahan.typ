@@ -60,12 +60,12 @@
       #text(weight: "bold")[LEMBAR PENGESAHAN PROPOSAL KEGIATAN\ #sub-judul]
     ]
   )
-  v(8pt)
+  v(10pt)
 
   // Rincian butir 1 s.d. 7 (Colons aligned at 156pt / pos 3119)
   grid(
     columns: (14pt, 134pt, 8pt, 1fr),
-    row-gutter: 9.0pt,
+    row-gutter: 10.5pt,
     [1.], [Kegiatan], [:], [#nama-kegiatan],
     [2.], [Ketua Pelaksana], [], [],
     [], [a. Nama], [:], [#ketua-pelaksana.nama],
@@ -95,7 +95,7 @@
     [], [Peserta #emph[Offline]], [:], [#str(peserta-count) Orang (#peserta-keterangan)]
   )
 
-  v(14pt)
+  v(20pt)
 
   // Tanggal Malang (aligned with right column)
   grid(
@@ -111,56 +111,56 @@
     columns: (1fr, 1fr),
     gutter: 15pt,
     [
-      #ketum-wri.jabatan,
-      #v(56pt)
+      #ketum-wri.jabatan,\
+      #v(72pt)
       #ketum-wri.nama\
       NIM. #ketum-wri.nim
     ],
     [
-      Ketua Pelaksana,
-      #v(56pt)
+      Ketua Pelaksana,\
+      #v(72pt)
       #ketua-pelaksana.nama\
       NIM. #ketua-pelaksana.nim
     ]
   )
 
-  v(12pt)
+  v(24pt)
   align(center)[Mengetahui dan menyetujui,]
-  v(10pt)
+  v(18pt)
 
   // Tier 2: Pembina & Presiden BEM
   grid(
     columns: (1fr, 1fr),
     gutter: 15pt,
     [
-      #pembina.jabatan,
-      #v(56pt)
+      #pembina.jabatan,\
+      #v(72pt)
       #pembina.nama\
       NIP. #pembina.nip
     ],
     [
-      #presiden-bem.jabatan,
-      #v(56pt)
+      #presiden-bem.jabatan,\
+      #v(72pt)
       #presiden-bem.nama\
       NIM. #presiden-bem.nim
     ]
   )
 
-  v(14pt)
+  v(26pt)
 
   // Tier 3: Wadir III & Kajur
   grid(
     columns: (1fr, 1fr),
     gutter: 15pt,
     [
-      #wadir-3.jabatan,
-      #v(56pt)
+      #wadir-3.jabatan,\
+      #v(72pt)
       #wadir-3.nama\
       NIP. #wadir-3.nip
     ],
     [
-      #kajur.jabatan,
-      #v(56pt)
+      #kajur.jabatan,\
+      #v(72pt)
       #kajur.nama\
       NIP. #kajur.nip
     ]
