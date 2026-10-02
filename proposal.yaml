@@ -1,0 +1,204 @@
+# ==============================================================================
+# PANDUAN PENGISIAN DATA PROPOSAL KEGIATAN WRI POLINEMA (YAML)
+# ==============================================================================
+# Petunjuk Pengisian untuk Sekretaris / Panitia:
+# 1. Anda HANYA perlu mengisi data di dalam file ini. Jangan buka kode Typst.
+# 2. Nilai teks diisi di sebelah kanan tanda titik dua (:), di dalam tanda petik "...".
+# 3. Untuk angka (jumlah uang, jumlah orang, tahun), cukup tulis angka tanpa titik/koma (contoh: 499000).
+# 4. Untuk daftar berbutir (list), diawali dengan tanda strip (-) diikuti spasi.
+# 5. JANGAN MENGUBAH nama kunci di sebelah kiri (misal 'nama:', 'nim:', 'prodi:').
+# 6. Kompilasi PDF dilakukan otomatis dengan perintah:
+#      typst compile proposal-runner.typ proposal.pdf
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. INFORMASI UMUM KEGIATAN
+# ------------------------------------------------------------------------------
+kegiatan:
+  nama: "Workshop Riset Informatika – Early Access"
+  sub_judul: "OPEN TALK KE-23 WORKSHOP DAN RISET INFORMATIKA"
+  tema: "Building Scalable AI Tools with Typst and Automation"
+  organisasi: "WORKSHOP DAN RISET INFORMATIKA"
+  institusi: "POLITEKNIK NEGERI MALANG"
+  tahun: "2026"
+  periode_wri: "2026/2027"
+
+# ------------------------------------------------------------------------------
+# 2. WAKTU & TEMPAT PELAKSANAAN
+# ------------------------------------------------------------------------------
+jadwal:
+  hari: "Minggu"
+  tanggal: "Minggu, 4 Oktober 2026"
+  tanggal_teks: "hari Minggu tanggal 4 bulan Oktober tahun 2026"   # Format teks resmi untuk Surat Pernyataan
+  jam: "09.00 – 15.00 WIB"
+  jam_pernyataan: "09.00"                                          # Jam mulai untuk Surat Pernyataan
+  tempat: "Ruang LSI 1, LSI 2, LSI 3 Lantai 6 Gedung Teknik Sipil Politeknik Negeri Malang"
+
+# ------------------------------------------------------------------------------
+# 3. IDENTITAS KETUA PELAKSANA
+# ------------------------------------------------------------------------------
+ketua_pelaksana:
+  nama: "Nobbel Kaisar Bhumi"
+  nim: "254107020098"
+  prodi: "D-IV Teknik Informatika"
+  jurusan: "Teknologi Informasi"
+  alamat: "Jl. Sekargadung No.34, Banjararum, Singosari, Malang"
+  telp: "087847512517"
+
+# ------------------------------------------------------------------------------
+# 4. KELENGKAPAN ADMINISTRASI & TANGGAL TTD
+# ------------------------------------------------------------------------------
+administrasi:
+  tanggal_surat_pernyataan: "25 September 2025"
+  tanggal_pengesahan: "10 September 2026"
+  peserta_count: 60
+  peserta_keterangan: "Mahasiswa Baru Jurusan Teknologi Informasi Politeknik Negeri Malang"
+
+# ------------------------------------------------------------------------------
+# 5. NARASI TEKS PROPOSAL
+# ------------------------------------------------------------------------------
+narasi:
+  latar_belakang:
+    - "Workshop Riset Informatika (WRI) adalah komunitas mahasiswa yang bergerak di bidang riset, rekayasa perangkat lunak, dan kecerdasan buatan di Politeknik Negeri Malang."
+    - "Dalam rangka membekali mahasiswa baru dengan pemahaman awal terkait alur kerja teknologi modern dan sistem otomasi open source, kegiatan Early Access ini diselenggarakan sebagai jembatan pembelajaran intensif."
+  landasan_kegiatan: "AD/ART Workshop dan Riset Informatika Politeknik Negeri Malang periode 2026/2027."
+  tujuan:
+    - "Memperkenalkan kultur riset dan komunitas Workshop dan Riset Informatika."
+    - "Meningkatkan kemampuan pemecahan masalah dan rekayasa perangkat lunak peserta."
+    - "Memberikan wadah jejaring, kolaborasi, dan eksplorasi teknologi terapan."
+  sasaran:
+    - "Seluruh Mahasiswa Jurusan Teknologi Informasi Politeknik Negeri Malang."
+  penutup:
+    paragraf_1: "Demikian proposal Workshop Riset Informatika – Early Access ini kami susun dengan sesungguh-sungguhnya, guna terlaksananya program kerja Workshop dan Riset Informatika Politeknik Negeri Malang periode 2026/2027."
+    paragraf_2: "Untuk merealisasikannya, kami sangat berharap kerja sama dan bantuan semua pihak yang terkait baik secara moral maupun spiritual demi kesuksesan penyelenggaraan kegiatan ini."
+
+# ------------------------------------------------------------------------------
+# 6. SUSUNAN KEPANITIAAN
+# ------------------------------------------------------------------------------
+kepanitiaan:
+  sekretaris:
+    nama: "Fatimah Az-Zahra"
+    nim: "254107020015"
+  bendahara:
+    nama: "Alya Putri Ramadhani"
+    nim: "254107020088"
+  divisi:
+    - nama: "Sie Acara"
+      koordinator:
+        nama: "Arya Bima Wicaksana"
+        nim: "254107020042"
+      anggota:
+        - nama: "Bagas Pratama"
+          nim: "254107020055"
+        - nama: "Citra Dewi Lestari"
+          nim: "254107020067"
+    - nama: "Sie Kesekretariatan"
+      koordinator:
+        nama: "Dian Wahyuni"
+        nim: "254107020033"
+      anggota:
+        - nama: "Eko Prasetyo"
+          nim: "254107020078"
+        - nama: "Fajar Maulana"
+          nim: "254107020091"
+    - nama: "Sie Humas"
+      koordinator:
+        nama: "Gilang Ramadhan"
+        nim: "254107020023"
+      anggota:
+        - nama: "Hana Nabila"
+          nim: "254107020044"
+        - nama: "Indra Kusuma"
+          nim: "254107020056"
+    - nama: "Sie Pubdekdok"
+      koordinator:
+        nama: "Joko Susilo"
+        nim: "254107020012"
+      anggota:
+        - nama: "Kartika Sari"
+          nim: "254107020034"
+        - nama: "Lukman Hakim"
+          nim: "254107020045"
+    - nama: "Sie Konsumsi"
+      koordinator:
+        nama: "Maya Anggraini"
+        nim: "254107020066"
+      anggota:
+        - nama: "Nanda Pratama"
+          nim: "254107020089"
+        - nama: "Oki Setiawan"
+          nim: "254107020099"
+    - nama: "Sie Perlengkapan"
+      koordinator:
+        nama: "Panji Gumilang"
+        nim: "254107020011"
+      anggota:
+        - nama: "Qoriatul Hasanah"
+          nim: "254107020022"
+        - nama: "Rizky Ramadhan"
+          nim: "254107020035"
+
+# ------------------------------------------------------------------------------
+# 7. SUSUNAN ACARA (RUNDOWN)
+# ------------------------------------------------------------------------------
+susunan_acara:
+  - hari_tanggal: "Minggu, 4 Oktober 2026"
+    sesi:
+      - waktu: "08.30 – 09.00"
+        acara: "Open Gate & Registrasi"
+      - waktu: "09.00 – 09.15"
+        acara: "Opening MC"
+      - waktu: "09.15 – 09.30"
+        acara: "Sambutan-Sambutan"
+      - waktu: "09.30 – 11.30"
+        acara: "Penyampaian Materi & Praktik"
+      - waktu: "11.30 – 12.30"
+        acara: "Ishoma (Istirahat, Sholat, Makan)"
+      - waktu: "12.30 – 14.30"
+        acara: "Hands-on Workshop & Mentoring"
+      - waktu: "14.30 – 14.45"
+        acara: "Pengumuman Peserta Terbaik & Kuis"
+      - waktu: "14.45 – 15.00"
+        acara: "Closing & Foto Bersama"
+
+# ------------------------------------------------------------------------------
+# 8. RANCANGAN ANGGARAN BIAYA (RAB)
+# ------------------------------------------------------------------------------
+anggaran:
+  sumber_dana:
+    - uraian: "Swadana"
+      rincian:
+        - uraian: "Kas WRI"
+          jumlah: 499000
+
+  pengeluaran:
+    - sie: "Sie Acara"
+      items:
+        - uraian: "Snack Reward (3 set x @Rp12.000)"
+          jumlah: 36000
+        - uraian: "Hadiah Mini Games"
+          jumlah: 50000
+    - sie: "Sie Kesekretariatan"
+      items:
+        - uraian: "Cetak Proposal Kegiatan (12 lembar x @Rp500)"
+          jumlah: 6000
+        - uraian: "Cetak Surat Peminjaman (6 lembar x @Rp500)"
+          jumlah: 3000
+        - uraian: "Materai Rp10.000 (1 lembar x @Rp12.000)"
+          jumlah: 12000
+        - uraian: "Jilid Proposal Kegiatan"
+          jumlah: 6000
+    - sie: "Sie Konsumsi"
+      items:
+        - uraian: "Air Galon Isi Ulang"
+          jumlah: 7000
+        - uraian: "Snack Peserta (100 pcs x @Rp2.500)"
+          jumlah: 250000
+        - uraian: "Konsumsi Pemateri"
+          jumlah: 50000
+    - sie: "Sie Perlengkapan"
+      items:
+        - uraian: "Baterai Mic (4 pcs x @Rp10.000)"
+          jumlah: 40000
+        - uraian: "Lakban Hitam"
+          jumlah: 40000
