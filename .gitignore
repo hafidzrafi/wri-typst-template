@@ -10,4 +10,5 @@ __pycache__/
 # Typst generated build outputs
 output-*.pdf
 *.pdf
+!early-access.pdf
 build/
