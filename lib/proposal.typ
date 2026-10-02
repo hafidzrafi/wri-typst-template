@@ -26,7 +26,7 @@
     footer: none
   )
 
-  // Typography: Times New Roman, 12pt, 1.5 line spacing (leading 0.50em = 18pt pitch)
+  // Typography: Times New Roman, 12pt, 1.5 line spacing (leading 0.70em = 20.4pt pitch)
   set text(
     font: "Times New Roman",
     size: 12pt,
@@ -34,17 +34,17 @@
   )
 
   set par(
-    leading: 0.50em,
+    leading: 0.70em,
     justify: true,
     first-line-indent: 0pt
   )
 
   // Reset indentation and line spacing for tables, grids, and lists
   show heading: set par(first-line-indent: 0pt, leading: 0.50em, justify: false)
-  show table: set par(first-line-indent: 0pt, leading: 0.35em, justify: false)
-  show grid: set par(first-line-indent: 0pt, leading: 0.40em, justify: false)
-  show enum: set par(first-line-indent: 0pt, leading: 0.50em, justify: true)
-  show list: set par(first-line-indent: 0pt, leading: 0.50em, justify: true)
+  show table: set par(first-line-indent: 0pt, leading: 0.40em, justify: false)
+  show grid: set par(first-line-indent: 0pt, leading: 0.50em, justify: false)
+  show enum: set par(first-line-indent: 0pt, leading: 0.70em, justify: true)
+  show list: set par(first-line-indent: 0pt, leading: 0.70em, justify: true)
   show rect: set par(first-line-indent: 0pt, justify: false)
 
   // Heading Level 1 (Grey Banner #BFBFBF)

@@ -91,8 +91,8 @@
 // Daftar pengeluaran tiap sie. Typst akan otomatis menghitung subtotal dan total.
 #let pengeluaran = (
   "Sie Acara": (
-    (uraian: "Snack Reward (3 set x @Rp12.000)", jumlah: 36000),
-    (uraian: "Hadiah Mini Games", jumlah: 50000),
+    (uraian: [#emph[Snack Reward] (3 #emph[set] x \@Rp12.000)], jumlah: 36000),
+    (uraian: [Hadiah #emph[Mini Games]], jumlah: 50000),
   ),
   "Sie Kesekretariatan": (
     (uraian: "Cetak Proposal Kegiatan (12 lembar x @Rp500)", jumlah: 6000),
@@ -102,11 +102,11 @@
   ),
   "Sie Konsumsi": (
     (uraian: "Air Galon Isi Ulang", jumlah: 7000),
-    (uraian: "Snack Peserta (100 pcs x @Rp2.500)", jumlah: 250000),
+    (uraian: [#emph[Snack] Peserta (100 #emph[pcs] x \@Rp2.500)], jumlah: 250000),
     (uraian: "Konsumsi Pemateri", jumlah: 50000),
   ),
   "Sie Perlengkapan": (
-    (uraian: "Baterai Mic (4 pcs x @Rp10.000)", jumlah: 40000),
+    (uraian: [Baterai #emph[Mic] (4 #emph[pcs] x \@Rp10.000)], jumlah: 40000),
     (uraian: "Lakban Hitam", jumlah: 40000),
   )
 )
@@ -250,7 +250,7 @@ Sasaran kegiatan ini adalah :
       (waktu: "09.15 – 09.30", acara: "Sambutan-Sambutan"),
       (waktu: "09.30 – 11.30", acara: "Penyampaian Materi & Praktik"),
       (waktu: "11.30 – 12.30", acara: emph("Ishoma (Istirahat, Sholat, Makan)")),
-      (waktu: "12.30 – 14.30", acara: "Hands-on Workshop & Mentoring"),
+      (waktu: "12.30 – 14.30", acara: emph("Hands-on Workshop & Mentoring")),
       (waktu: "14.30 – 14.45", acara: "Pengumuman Peserta Terbaik & Kuis"),
       (waktu: "14.45 – 15.00", acara: emph("Closing & Foto Bersama")),
     )

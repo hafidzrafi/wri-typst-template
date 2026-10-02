@@ -46,18 +46,18 @@
   }
 
   // Judul Lampiran
+  let display-judul = if type(kegiatan-judul) == str { upper(kegiatan-judul) } else { kegiatan-judul }
   align(center)[
-    #text(weight: "bold")[DAFTAR PANITIA #emph[OFFLINE]\ #upper(kegiatan-judul)]
+    #text(weight: "bold")[DAFTAR PANITIA #emph[OFFLINE]\ #display-judul]
   ]
   v(8pt)
 
   // Tabel Panitia
   table(
-    columns: (1.24cm, 8.00cm, 5.00cm),
-    rows: (27.35pt, ..(auto,)*baris.len()),
+    columns: (1.20cm, 7.30cm, 6.00cm),
     align: (center + horizon, left + horizon, center + horizon),
     stroke: 0.5pt,
-    inset: (x: 4pt, y: 3pt),
+    inset: (x: 5pt, y: 5.5pt),
     table.header(
       align(center + horizon)[*NO*],
       align(center + horizon)[*NAMA*],

@@ -46,8 +46,8 @@
     jabatan: "Ketua Jurusan Teknologi Informasi"
   )
 ) = {
-  // Section 2 margins (Top 2.25cm, Bottom 1.75cm, Left 4.0cm, Right 2.5cm)
-  set page(margin: (top: 2.25cm, bottom: 1.75cm, left: 4.0cm, right: 2.5cm))
+  // Section 2 margins (Top 2.0cm, Bottom 1.5cm, Left 4.0cm, Right 2.5cm)
+  set page(margin: (top: 2.0cm, bottom: 1.5cm, left: 4.0cm, right: 2.5cm))
   set par(leading: 0.50em, spacing: 0pt, justify: false, first-line-indent: 0pt)
 
   // Banner Abu-Abu (#BFBFBF)
@@ -112,21 +112,21 @@
     gutter: 15pt,
     [
       #ketum-wri.jabatan,
-      #v(44pt)
+      #v(56pt)
       #ketum-wri.nama\
       NIM. #ketum-wri.nim
     ],
     [
       Ketua Pelaksana,
-      #v(44pt)
+      #v(56pt)
       #ketua-pelaksana.nama\
       NIM. #ketua-pelaksana.nim
     ]
   )
 
-  v(10pt)
+  v(12pt)
   align(center)[Mengetahui dan menyetujui,]
-  v(8pt)
+  v(10pt)
 
   // Tier 2: Pembina & Presiden BEM
   grid(
@@ -134,19 +134,19 @@
     gutter: 15pt,
     [
       #pembina.jabatan,
-      #v(44pt)
+      #v(56pt)
       #pembina.nama\
       NIP. #pembina.nip
     ],
     [
       #presiden-bem.jabatan,
-      #v(44pt)
+      #v(56pt)
       #presiden-bem.nama\
       NIM. #presiden-bem.nim
     ]
   )
 
-  v(12pt)
+  v(14pt)
 
   // Tier 3: Wadir III & Kajur
   grid(
@@ -154,13 +154,13 @@
     gutter: 15pt,
     [
       #wadir-3.jabatan,
-      #v(44pt)
+      #v(56pt)
       #wadir-3.nama\
       NIP. #wadir-3.nip
     ],
     [
       #kajur.jabatan,
-      #v(44pt)
+      #v(56pt)
       #kajur.nama\
       NIP. #kajur.nip
     ]

@@ -22,7 +22,7 @@
     jabatan: "Dosen Pembina Kemahasiswaan"
   )
 ) = {
-  set par(leading: 0.50em, spacing: 0pt, justify: true, first-line-indent: 0pt)
+  set par(leading: 0.65em, spacing: 0pt, justify: true, first-line-indent: 0pt)
 
   v(6pt)
   align(center)[
@@ -66,21 +66,21 @@
   v(14pt)
   [Demikian surat pernyataan ini saya buat dengan penuh kesadaran dan tanggung jawab.]
 
-  v(56pt)
+  v(46pt)
   grid(
     columns: (1fr, 1fr),
     gutter: 20pt,
     [
       Menyetujui,\
       #pembina.jabatan,
-      #v(52pt)
+      #v(58pt)
       #pembina.nama\
       NIP. #pembina.nip
     ],
     [
       Malang, #tanggal-surat\
       Ketua Pelaksana,
-      #v(4pt)
+      #v(6pt)
       #rect(
         width: 55.8pt,
         height: 44.0pt,
@@ -89,7 +89,7 @@
           #text(size: 8.5pt, weight: "bold")[Materai\ 10000]
         ]
       )
-      #v(4pt)
+      #v(6pt)
       #ketua-pelaksana.nama\
       NIM. #ketua-pelaksana.nim
     ]

@@ -63,8 +63,8 @@
       
       block(spacing: 8pt)[
         #grid(
-          columns: (25pt, 1fr, 25pt),
-          [#str(sie-idx).], align(center)[#sie.nama], []
+          columns: (25pt, 1fr),
+          [#str(sie-idx).], [#sie.nama]
         )
         #v(3pt)
         #pad(left: 25pt)[

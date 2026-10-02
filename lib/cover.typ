@@ -31,7 +31,7 @@
 
   v(75pt)
   align(center)[
-    #image(logo-path, width: 4.93cm, height: 4.66cm)
+    #image(logo-path, width: 4.8cm)
   ]
 
   v(50pt)

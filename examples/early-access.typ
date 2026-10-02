@@ -84,9 +84,9 @@
 
 #let pengeluaran = (
   "Sie Acara": (
-    (uraian: [#emph[Snack Reward] (3 set x \@Rp12.000)], jumlah: 36000),
-    (uraian: [#emph[Keychain] (10 pcs x \@Rp5.000)], jumlah: 50000),
-    (uraian: [#emph[Coaster] (8 pcs x \@Rp6.000)], jumlah: 48000),
+    (uraian: [#emph[Snack Reward] (3 #emph[set] x \@Rp12.000)], jumlah: 36000),
+    (uraian: [#emph[Keychain] (10 #emph[pcs] x \@Rp5.000)], jumlah: 50000),
+    (uraian: [#emph[Coaster] (8 #emph[pcs] x \@Rp6.000)], jumlah: 48000),
   ),
   "Sie Kesekretariatan": (
     (uraian: "Cetak Presensi (16 lembar x @Rp500)", jumlah: 8000),
@@ -101,11 +101,11 @@
   ),
   "Sie Konsumsi": (
     (uraian: "Air Galon Isi Ulang", jumlah: 7000),
-    (uraian: [#emph[Snack] (87 pcs x \@Rp2.500)], jumlah: 217500),
-    (uraian: "Air mineral 600ml (10 pcs x @Rp3.000)", jumlah: 30000),
+    (uraian: [#emph[Snack] (87 #emph[pcs] x \@Rp2.500)], jumlah: 217500),
+    (uraian: [Air mineral 600ml (10 #emph[pcs] x \@Rp3.000)], jumlah: 30000),
     (uraian: "Gula (1kg @Rp18.000)", jumlah: 18000),
-    (uraian: "Cup gelas (1 pack @Rp7.500)", jumlah: 7500),
-    (uraian: "Teh celup (1 pack @Rp10.000)", jumlah: 10000),
+    (uraian: [#emph[Cup] gelas (1 #emph[pack] \@Rp7.500)], jumlah: 7500),
+    (uraian: [Teh celup (1 #emph[pack] \@Rp10.000)], jumlah: 10000),
   )
 )
 
@@ -165,7 +165,7 @@
 == 1.1. Latar Belakang
 #pad(left: 21.3pt)[
   #set par(first-line-indent: (amount: 32.4pt, all: true))
-  #emph[Early Access] merupakan suatu kegiatan dari Workshop dan Riset Informatika di Politeknik Negeri Malang. Kegiatan tersebut secara umum dilakukan untuk mengenalkan komunitas Workshop dan Riset Informatika, serta sekaligus sharing ilmu kepada mahasiswa Politeknik Negeri Malang, khususnya Jurusan Teknologi Informasi. Kegiatan ini diharapkan juga dapat menjadi wadah #emph[sharing] dan diskusi antara komunitas dan mahasiswa, terutama halnya tentang pengetahuan dasar ataupun terbaru, yang berkaitan dengan bidang Teknologi Informasi.
+  #emph[Early Access] merupakan suatu kegiatan dari Workshop dan Riset Informatika di Politeknik Negeri Malang. Kegiatan tersebut secara umum dilakukan untuk mengenalkan komunitas Workshop dan Riset Informatika, serta sekaligus #emph[sharing] ilmu kepada mahasiswa Politeknik Negeri Malang, khususnya Jurusan Teknologi Informasi. Kegiatan ini diharapkan juga dapat menjadi wadah #emph[sharing] dan diskusi antara komunitas dan mahasiswa, terutama halnya tentang pengetahuan dasar ataupun terbaru, yang berkaitan dengan bidang Teknologi Informasi.
 
   Dalam Workshop Riset Informatika – #emph[Early Access] ini mengusung tema pengenalan komunitas Workshop dan Riset Informatika (WRI #emph[Early Access]). Dalam menjalani perkuliahan, mahasiswa IT tentunya harus mempersiapkan diri. Untuk itu dibutuhkan pembekalan terkait apa saja yang perlu dilakukan supaya dapat produktif di bangku perkuliahan, kiat-kiat dalam belajar, serta pengenalan kegiatan pembelajaran melalui diskusi dan tutor sebaya seperti yang telah diterapkan pada Workshop dan Riset Informatika.
 ]
@@ -323,6 +323,6 @@ Atas kesediaan dan perhatian semua pihak, kami mengucapkan terima kasih.
 // HALAMAN 12: LAMPIRAN (DAFTAR PANITIA OFFLINE)
 // ==========================================
 #render-daftar-panitia-offline(
-  "OPEN TALK KE-23 WORKSHOP DAN RISET INFORMATIKA",
+  [#emph[OPEN TALK] KE-23 WORKSHOP DAN RISET INFORMATIKA],
   kepanitiaan
 )

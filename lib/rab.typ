@@ -67,15 +67,14 @@
   }
 
   table(
-    columns: (1.24cm, 9.75cm, 3.51cm),
-    rows: (22.5pt,),
+    columns: (1.20cm, 9.30cm, 4.00cm),
     align: (center + horizon, left + horizon, right + horizon),
     stroke: 0.5pt,
-    inset: (x: 4pt, y: 3.5pt),
+    inset: (x: 5pt, y: 4.5pt),
     table.header(
       align(center + horizon)[*No.*],
       align(center + horizon)[*Uraian*],
-      align(center + horizon)[*Jumlah\ (Rp)*]
+      align(center + horizon)[*Jumlah (Rp)*]
     ),
     ..rows,
     table.cell([]),
@@ -93,15 +92,14 @@
       text(weight: "bold")[#str(sie-idx). #sie-name]
       v(4pt)
       table(
-        columns: (1.10cm, 9.89cm, 3.51cm),
-        rows: (22.4pt,),
+        columns: (1.20cm, 9.30cm, 4.00cm),
         align: (center + horizon, left + horizon, right + horizon),
         stroke: 0.5pt,
-        inset: (x: 4pt, y: 3.5pt),
+        inset: (x: 5pt, y: 4.5pt),
         table.header(
           align(center + horizon)[*No.*],
           align(center + horizon)[*Uraian*],
-          align(center + horizon)[*Jumlah\ (Rp)*]
+          align(center + horizon)[*Jumlah (Rp)*]
         ),
         ..for (idx, item) in items.enumerate() {
           (
@@ -122,15 +120,14 @@
 #let render-rekapitulasi(pengeluaran) = {
   let total = hitung-total-pengeluaran(pengeluaran)
   table(
-    columns: (1.10cm, 9.89cm, 3.51cm),
-    rows: (22.4pt,),
+    columns: (1.20cm, 9.30cm, 4.00cm),
     align: (center + horizon, left + horizon, right + horizon),
     stroke: 0.5pt,
-    inset: (x: 4pt, y: 3.5pt),
+    inset: (x: 5pt, y: 4.5pt),
     table.header(
       align(center + horizon)[*No.*],
       align(center + horizon)[*Uraian*],
-      align(center + horizon)[*Jumlah\ (Rp)*]
+      align(center + horizon)[*Jumlah (Rp)*]
     ),
     ..for (idx, (sie-name, items)) in pengeluaran.pairs().enumerate() {
       let subtotal = hitung-subtotal(items)
