@@ -48,7 +48,7 @@
 ) = {
   // Section 2 margins (Top 2.0cm, Bottom 1.5cm, Left 4.0cm, Right 2.5cm)
   set page(margin: (top: 2.0cm, bottom: 1.5cm, left: 4.0cm, right: 2.5cm))
-  set par(leading: 0.50em, spacing: 0pt, justify: false, first-line-indent: 0pt)
+  set par(leading: 0.70em, spacing: 0pt, justify: false, first-line-indent: 0pt)
 
   // Banner Abu-Abu (#BFBFBF)
   rect(
@@ -65,7 +65,7 @@
   // Rincian butir 1 s.d. 7 (Colons aligned at 156pt / pos 3119)
   grid(
     columns: (14pt, 134pt, 8pt, 1fr),
-    row-gutter: 7.2pt,
+    row-gutter: 8.5pt,
     [1.], [Kegiatan], [:], [#nama-kegiatan],
     [2.], [Ketua Pelaksana], [], [],
     [], [a. Nama], [:], [#ketua-pelaksana.nama],

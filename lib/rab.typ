@@ -70,7 +70,7 @@
     columns: (1.20cm, 9.30cm, 4.00cm),
     align: (center + horizon, left + horizon, right + horizon),
     stroke: 0.5pt,
-    inset: (x: 5pt, y: 4.5pt),
+    inset: (x: 5pt, y: 6pt),
     table.header(
       align(center + horizon)[*No.*],
       align(center + horizon)[*Uraian*],
@@ -95,7 +95,7 @@
         columns: (1.20cm, 9.30cm, 4.00cm),
         align: (center + horizon, left + horizon, right + horizon),
         stroke: 0.5pt,
-        inset: (x: 5pt, y: 4.5pt),
+        inset: (x: 5pt, y: 6pt),
         table.header(
           align(center + horizon)[*No.*],
           align(center + horizon)[*Uraian*],
@@ -123,7 +123,7 @@
     columns: (1.20cm, 9.30cm, 4.00cm),
     align: (center + horizon, left + horizon, right + horizon),
     stroke: 0.5pt,
-    inset: (x: 5pt, y: 4.5pt),
+    inset: (x: 5pt, y: 6pt),
     table.header(
       align(center + horizon)[*No.*],
       align(center + horizon)[*Uraian*],

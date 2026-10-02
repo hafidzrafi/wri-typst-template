@@ -11,7 +11,7 @@
   logo-path: "../assets/logo-polinema.png"
 ) = {
   set text(weight: "bold", size: 12pt)
-  set par(leading: 0.50em, justify: false)
+  set par(leading: 0.70em, justify: false)
 
   // Top Banner (#BFBFBF)
   rect(
@@ -24,17 +24,17 @@
     ]
   )
 
-  v(72pt)
+  v(50pt)
   align(center)[
     #tema-kegiatan
   ]
 
-  v(75pt)
+  v(50pt)
   align(center)[
     #image(logo-path, width: 4.8cm)
   ]
 
-  v(50pt)
+  v(40pt)
   align(center)[
     Oleh :\
     #v(3pt)
@@ -43,7 +43,7 @@
     NIM. #ketua-pelaksana.nim
   ]
 
-  v(130pt)
+  v(1fr)
   // Bottom Banner (#BFBFBF)
   rect(
     width: 100%,

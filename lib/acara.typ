@@ -22,7 +22,7 @@
     rows: (36.0pt,),
     align: center + horizon,
     stroke: 0.5pt,
-    inset: (x: 4pt, y: 4pt),
+    inset: (x: 5pt, y: 6.5pt),
     table.header(
       align(center + horizon)[*Hari, tanggal*],
       align(center + horizon)[*Waktu*],

@@ -22,7 +22,7 @@
     jabatan: "Dosen Pembina Kemahasiswaan"
   )
 ) = {
-  set par(leading: 0.65em, spacing: 0pt, justify: true, first-line-indent: 0pt)
+  set par(leading: 0.85em, spacing: 0pt, justify: true, first-line-indent: 0pt)
 
   v(6pt)
   align(center)[
@@ -35,7 +35,7 @@
 
   grid(
     columns: (52pt, 10pt, 1fr),
-    row-gutter: 3pt,
+    row-gutter: 4.5pt,
     [Nama], [:], [#ketua-pelaksana.nama],
     [NIM], [:], [#ketua-pelaksana.nim],
     [Prodi], [:], [#ketua-pelaksana.prodi],
@@ -54,7 +54,7 @@
   [Untuk itu saya menyatakan dengan sebenarnya bahwa:]
   v(6pt)
 
-  set enum(indent: 0pt, body-indent: 14pt, spacing: 4.5pt)
+  set enum(indent: 0pt, body-indent: 14pt, spacing: 6.5pt)
   [
     + Kegiatan ini dilaksanakan secara Luring (#emph[Offline]) dengan menerapkan protokol kesehatan yang ketat sesuai dengan arahan dari kampus dan pemerintah.
     + Dalam pelaksanaan kegiatan tersebut, panitia pelaksana tidak akan bertindak untuk mencederai fisik atau mental peserta kegiatan.

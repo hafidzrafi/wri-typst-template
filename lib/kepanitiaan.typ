@@ -21,7 +21,7 @@
   if tampilkan-petinggi {
     grid(
       columns: (115pt, 12pt, 1fr, auto),
-      row-gutter: 5pt,
+      row-gutter: 6pt,
       [Pelindung], [:], [#pelindung], [],
       [Penasehat], [:], [
         #for (i, p) in penasehat.enumerate() {
@@ -61,7 +61,7 @@
         rows.push([NIM. #agg.nim])
       }
       
-      block(spacing: 8pt)[
+      block(spacing: 10pt)[
         #grid(
           columns: (25pt, 1fr),
           [#str(sie-idx).], [#sie.nama]
@@ -70,7 +70,7 @@
         #pad(left: 25pt)[
           #grid(
             columns: (78pt, 12pt, 1fr, auto),
-            row-gutter: 3.5pt,
+            row-gutter: 4.5pt,
             ..rows
           )
         ]
