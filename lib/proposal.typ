@@ -9,6 +9,7 @@
 #import "kepanitiaan.typ": render-susunan-kepanitiaan
 #import "acara.typ": render-susunan-acara
 #import "lampiran.typ": render-daftar-panitia-offline
+#import "ttd.typ": render-box-materai, render-ttd-pair, render-ttd-pernyataan
 
 #let proposal(
   doc

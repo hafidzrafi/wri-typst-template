@@ -1,6 +1,8 @@
 // lib/pernyataan.typ
 // Layout Surat Pernyataan Ketua Pelaksana (Kegiatan Offline)
 
+#import "ttd.typ": render-ttd-pernyataan
+
 #let render-surat-pernyataan(
   ketua-pelaksana: (
     nama: "",
@@ -67,63 +69,13 @@
   v(8pt)
   [Demikian surat pernyataan ini saya buat dengan penuh kesadaran dan tanggung jawab.]
 
-  v(14pt)
+  v(8pt)
 
-  // Tanggal Malang di kanan atas
-  grid(
-    columns: (1fr, 1fr),
+  render-ttd-pernyataan(
+    tanggal: tanggal-surat,
+    pembina: pembina,
+    ketua-pelaksana: ketua-pelaksana,
+    space: 52pt,
     gutter: 20pt,
-    [],
-    [Malang, #tanggal-surat]
-  )
-  v(12pt) // Kosong 1 line
-
-  // Signature Block menggunakan grid multi-baris agar NAMA SEJAJAR PRESISI
-  grid(
-    columns: (1fr, 1fr),
-    gutter: 20pt,
-    align: (left, left),
-
-    // Baris 1: Jabatan
-    [
-      Menyetujui,\
-      #pembina.jabatan,
-    ],
-    [
-      Ketua Pelaksana,
-    ],
-
-    // Baris 2: Ruang tanda tangan & materai
-    [
-      #v(66pt)
-    ],
-    [
-      #v(6pt)
-      #rect(
-        width: 55pt,
-        height: 44pt,
-        stroke: 0.75pt,
-        align(center + horizon)[
-          #text(size: 8.5pt, weight: "bold")[Materai\ 10000]
-        ]
-      )
-      #v(6pt)
-    ],
-
-    // Baris 3: Nama (SEJAJAR)
-    [
-      #pembina.nama
-    ],
-    [
-      #ketua-pelaksana.nama
-    ],
-
-    // Baris 4: NIP & NIM (SEJAJAR)
-    [
-      NIP. #pembina.nip
-    ],
-    [
-      NIM. #ketua-pelaksana.nim
-    ]
   )
 }

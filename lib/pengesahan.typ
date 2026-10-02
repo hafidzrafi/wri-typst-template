@@ -2,6 +2,7 @@
 // Layout Lembar Pengesahan Proposal Kegiatan WRI Polinema
 
 #import "terbilang.typ": terbilang-rupiah, format-rupiah
+#import "ttd.typ": render-ttd-pair
 
 #let render-lembar-pengesahan(
   nama-kegiatan: "",
@@ -104,24 +105,14 @@
     [],
     [Malang, #tanggal-pengesahan]
   )
-  v(4pt)
+  v(12pt)
 
   // Tier 1: Ketum WRI & Kapel
-  grid(
-    columns: (1fr, 1fr),
+  render-ttd-pair(
+    ttd-kiri: (jabatan: ketum-wri.jabatan, nama: ketum-wri.nama, id: "NIM. " + ketum-wri.nim),
+    ttd-kanan: (jabatan: "Ketua Pelaksana", nama: ketua-pelaksana.nama, id: "NIM. " + ketua-pelaksana.nim),
+    space: 72pt,
     gutter: 15pt,
-    [
-      #ketum-wri.jabatan,\
-      #v(72pt)
-      #ketum-wri.nama\
-      NIM. #ketum-wri.nim
-    ],
-    [
-      Ketua Pelaksana,\
-      #v(72pt)
-      #ketua-pelaksana.nama\
-      NIM. #ketua-pelaksana.nim
-    ]
   )
 
   v(24pt)
@@ -129,40 +120,20 @@
   v(18pt)
 
   // Tier 2: Pembina & Presiden BEM
-  grid(
-    columns: (1fr, 1fr),
+  render-ttd-pair(
+    ttd-kiri: (jabatan: pembina.jabatan, nama: pembina.nama, id: "NIP. " + pembina.nip),
+    ttd-kanan: (jabatan: presiden-bem.jabatan, nama: presiden-bem.nama, id: "NIM. " + presiden-bem.nim),
+    space: 72pt,
     gutter: 15pt,
-    [
-      #pembina.jabatan,\
-      #v(72pt)
-      #pembina.nama\
-      NIP. #pembina.nip
-    ],
-    [
-      #presiden-bem.jabatan,\
-      #v(72pt)
-      #presiden-bem.nama\
-      NIM. #presiden-bem.nim
-    ]
   )
 
   v(26pt)
 
   // Tier 3: Wadir III & Kajur
-  grid(
-    columns: (1fr, 1fr),
+  render-ttd-pair(
+    ttd-kiri: (jabatan: wadir-3.jabatan, nama: wadir-3.nama, id: "NIP. " + wadir-3.nip),
+    ttd-kanan: (jabatan: kajur.jabatan, nama: kajur.nama, id: "NIP. " + kajur.nip),
+    space: 72pt,
     gutter: 15pt,
-    [
-      #wadir-3.jabatan,\
-      #v(72pt)
-      #wadir-3.nama\
-      NIP. #wadir-3.nip
-    ],
-    [
-      #kajur.jabatan,\
-      #v(72pt)
-      #kajur.nama\
-      NIP. #kajur.nip
-    ]
   )
 }
