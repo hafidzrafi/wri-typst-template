@@ -57,7 +57,7 @@
     columns: (1.20cm, 7.30cm, 6.00cm),
     align: (center + horizon, left + horizon, center + horizon),
     stroke: 0.5pt,
-    inset: (x: 5pt, y: 6.5pt),
+    inset: (x: 5pt, y: 5.5pt),
     table.header(
       align(center + horizon)[*NO*],
       align(center + horizon)[*NAMA*],

@@ -22,20 +22,21 @@
     jabatan: "Dosen Pembina Kemahasiswaan"
   )
 ) = {
-  set par(leading: 0.85em, spacing: 0pt, justify: true, first-line-indent: 0pt)
+  set page(margin: (top: 2.0cm, bottom: 1.5cm, left: 4.0cm, right: 2.5cm))
+  set par(leading: 0.75em, spacing: 5.0pt, justify: true, first-line-indent: 0pt)
 
   v(6pt)
   align(center)[
     #underline[#text(weight: "bold", size: 12pt)[SURAT PERNYATAAN]]
   ]
-  v(14pt)
+  v(7pt)
 
   [Saya yang bertanda tangan dibawah ini.]
-  v(14pt)
+  v(7pt)
 
   grid(
     columns: (52pt, 10pt, 1fr),
-    row-gutter: 4.5pt,
+    row-gutter: 6.0pt,
     [Nama], [:], [#ketua-pelaksana.nama],
     [NIM], [:], [#ketua-pelaksana.nim],
     [Prodi], [:], [#ketua-pelaksana.prodi],
@@ -44,17 +45,17 @@
     [Telp/Hp], [:], [#ketua-pelaksana.telp],
   )
 
-  v(14pt)
+  v(7pt)
   [adalah ketua pelaksana kegiatan #nama-kegiatan, pada Workshop dan Riset Informatika Politeknik Negeri Malang.]
 
-  v(14pt)
+  v(7pt)
   [Pada #tanggal-pelaksanaan-teks diselenggarakan kegiatan #nama-kegiatan di Politeknik Negeri Malang. Unsur kepanitiaan kegiatan adalah mahasiswa aktif yang menjadi anggota fungsionaris Workshop dan Riset Informatika periode #periode-wri.]
 
-  v(14pt)
+  v(7pt)
   [Untuk itu saya menyatakan dengan sebenarnya bahwa:]
   v(6pt)
 
-  set enum(indent: 0pt, body-indent: 14pt, spacing: 6.5pt)
+  set enum(indent: 0pt, body-indent: 14pt, spacing: 5.0pt)
   [
     + Kegiatan ini dilaksanakan secara Luring (#emph[Offline]) dengan menerapkan protokol kesehatan yang ketat sesuai dengan arahan dari kampus dan pemerintah.
     + Dalam pelaksanaan kegiatan tersebut, panitia pelaksana tidak akan bertindak untuk mencederai fisik atau mental peserta kegiatan.
@@ -63,10 +64,10 @@
     + Kegiatan ini dilaksanakan pada pukul #jam-pelaksanaan WIB.
   ]
 
-  v(14pt)
+  v(7pt)
   [Demikian surat pernyataan ini saya buat dengan penuh kesadaran dan tanggung jawab.]
 
-  v(46pt)
+  v(14pt)
   grid(
     columns: (1fr, 1fr),
     gutter: 20pt,

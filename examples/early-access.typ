@@ -195,7 +195,7 @@
 = IV. TUJUAN KEGIATAN
 Tujuan diadakan Program Kerja ini adalah:
 #pad(left: 18.0pt)[
-  #set enum(indent: 0pt, body-indent: 18.0pt, spacing: 4pt)
+  #set enum(indent: 0pt, body-indent: 18.0pt, spacing: 8pt)
   + Memperkenalkan komunitas Workshop Riset dan Informatika.
   + Mengetahui program serta kegiatan yang ada di Workshop dan Riset Informatika.
   + Memberikan informasi terkait berbagai manfaat yang diperoleh jika bergabung dengan Workshop dan Riset Informatika.
@@ -208,7 +208,7 @@ Waktu dan tempat pelaksanaan kegiatan  ini adalah:
 #pad(left: 21.3pt)[
   #grid(
     columns: (80pt, 12pt, 1fr),
-    row-gutter: 4pt,
+    row-gutter: 8pt,
     [hari, tanggal], [:], [Minggu, 4 Oktober 2026],
     [waktu], [:], [09.00 – 14.55 WIB],
     [tempat], [:], [Ruang LSI 1, LSI 2, LSI 3 Lantai 6 Gedung Teknik Sipil Politeknik Negeri Malang]

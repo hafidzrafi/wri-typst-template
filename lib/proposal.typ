@@ -34,18 +34,18 @@
   )
 
   set par(
-    leading: 1.00em,
-    spacing: 1.5em,
+    leading: 0.75em,
+    spacing: 1.0em,
     justify: true,
     first-line-indent: 0pt
   )
 
   // Reset indentation and line spacing for tables, grids, and lists
-  show heading: set par(first-line-indent: 0pt, leading: 0.70em, justify: false)
-  show table: set par(first-line-indent: 0pt, leading: 0.70em, justify: false)
-  show grid: set par(first-line-indent: 0pt, leading: 0.70em, justify: false)
-  show enum: set par(first-line-indent: 0pt, leading: 1.00em, justify: true)
-  show list: set par(first-line-indent: 0pt, leading: 1.00em, justify: true)
+  show heading: set par(first-line-indent: 0pt, leading: 0.75em, justify: false)
+  show table: set par(first-line-indent: 0pt, leading: 0.75em, justify: false)
+  show grid: set par(first-line-indent: 0pt, leading: 0.75em, justify: false)
+  show enum: set par(first-line-indent: 0pt, leading: 0.75em, justify: true)
+  show list: set par(first-line-indent: 0pt, leading: 0.75em, justify: true)
   show rect: set par(first-line-indent: 0pt, justify: false)
 
   // Heading Level 1 (Grey Banner #BFBFBF)
